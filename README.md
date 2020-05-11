@@ -2,7 +2,7 @@
 
 This plugin introduces a new linemode that prefixes file names with a file icon
 
-![image](https://raw.githubusercontent.com/alexanderjeurissen/ranger_devicons/master/screenshot.png)
+![image](https://raw.https://github.com/glaulher/ranger_devicons/blob/master/screeshoot.png)
 
 ## Prerequisites
 This plugin uses glyphs from a patched NERDfont. So in order for this plugin to work you need to
