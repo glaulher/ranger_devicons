@@ -1,3 +1,5 @@
+This plugin is a fork of https://github.com/alexanderjeurissen/ranger_devicons 
+
 # File icons for the Ranger file manager
 
 This plugin introduces a new linemode that prefixes file names with a file icon
@@ -5,22 +7,26 @@ This plugin introduces a new linemode that prefixes file names with a file icon
 ![image](https://github.com/glaulher/ranger_devicons/blob/master/screeshoot.png)
 
 ## Prerequisites
-This plugin uses glyphs from a patched NERDfont. So in order for this plugin to work you need to
-install a NERDfont and set it as the default font for your terminal.
+This plugin uses glyphs from a patched material icons. So in order for this plugin to work you need to
+install a material icons.
+https://github.com/google/material-design-icons/blob/master/iconfont/MaterialIcons-Regular.ttf
 
-I personally use the Source Code Pro patched NERDfont(this is also the font displayed in the
-screenshot), this and other NERDfonts and the install instructions for these fonts can be found in
-the following repository: https://github.com/ryanoasis/nerd-fonts
+create folder:
 
-## Install instructions
-### Stable method:
-A makefile is included to install and uninstall this plugin. to install simply run:
-`make install` and to uninstall the plugin run `make uninstall`.
+mkdir ~/.fonts
+cd ~/.fonts
 
-### Experimental method:
-Ranger has added support for loading directories in the plugins folder to `master` which makes it easier to install and keep plugins updated.  
+download font:
+
+wget https://github.com/google/material-design-icons/raw/master/iconfont/MaterialIcons-Regular.ttf
+
+update cache
+
+fc-cache -vf ~/.fonts/
+ 
+
 To install, just clone the repo into the plugins folder:
 ```bash
-git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+git clone https://github.com/glaulher/ranger_devicons.git ~/.config/ranger/plugins/ranger_devicons
 ```
 Then add `default_linemode devicons` to your `rc.conf`.
